@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/accounts?currentSchema=kezlo
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
