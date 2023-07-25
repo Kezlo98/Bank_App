@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: configserver
+  profiles:
+  # for local storage
+#    active: native
+ #  for git storage
+    active: git
+  cloud:
+    config:
+      server:
+#        for local path
+#        native:
+#          search-locations: classpath:/config
+
+#        for git server
+        git:
+          uri: https://github.com/Kezlo98/configuration_git_server.git
+          clone-on-start: true
+          default-label: main
+server:
+  port: 8071

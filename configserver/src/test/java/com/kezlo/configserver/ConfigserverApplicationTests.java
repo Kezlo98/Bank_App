@@ -1,10 +1,10 @@
-package com.kezlo.accounts;
+package com.kezlo.configserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AccountsApplicationTests {
+class ConfigserverApplicationTests {
 
     @Test
     void contextLoads() {

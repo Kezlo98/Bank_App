@@ -9,6 +9,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.time.LocalDate;
+
 @Entity
 @Getter
 @Setter
@@ -24,7 +26,7 @@ public class Loans {
     private int customerId;
 
     @Column(name="start_dt")
-    private Date startDt;
+    private LocalDate startDt;
 
     @Column(name = "loan_type")
     private String loanType;
